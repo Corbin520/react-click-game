@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/css/main.cd5c61ef.chunk.css",
-    "main.js": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/js/main.c0cb64b1.chunk.js",
-    "main.js.map": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/js/main.c0cb64b1.chunk.js.map",
-    "runtime~main.js": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/js/runtime~main.cada65b4.js",
-    "runtime~main.js.map": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/js/runtime~main.cada65b4.js.map",
-    "static/js/2.6efc73d3.chunk.js": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/js/2.6efc73d3.chunk.js",
-    "static/js/2.6efc73d3.chunk.js.map": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/js/2.6efc73d3.chunk.js.map",
-    "index.html": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/index.html",
-    "precache-manifest.883338248729c37029a6875a9a0d89fc.js": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/precache-manifest.883338248729c37029a6875a9a0d89fc.js",
-    "service-worker.js": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/service-worker.js",
-    "static/css/main.cd5c61ef.chunk.css.map": "%7BCorbin520%7D.github.io/%7Breact-click-game%7D/static/css/main.cd5c61ef.chunk.css.map"
+    "main.css": "/react-click-game/static/css/main.cd5c61ef.chunk.css",
+    "main.js": "/react-click-game/static/js/main.b175005f.chunk.js",
+    "main.js.map": "/react-click-game/static/js/main.b175005f.chunk.js.map",
+    "runtime~main.js": "/react-click-game/static/js/runtime~main.d3fbd864.js",
+    "runtime~main.js.map": "/react-click-game/static/js/runtime~main.d3fbd864.js.map",
+    "static/js/2.6efc73d3.chunk.js": "/react-click-game/static/js/2.6efc73d3.chunk.js",
+    "static/js/2.6efc73d3.chunk.js.map": "/react-click-game/static/js/2.6efc73d3.chunk.js.map",
+    "index.html": "/react-click-game/index.html",
+    "precache-manifest.432386307783e5d5ae78d35f4f3cf955.js": "/react-click-game/precache-manifest.432386307783e5d5ae78d35f4f3cf955.js",
+    "service-worker.js": "/react-click-game/service-worker.js",
+    "static/css/main.cd5c61ef.chunk.css.map": "/react-click-game/static/css/main.cd5c61ef.chunk.css.map"
   }
 }
