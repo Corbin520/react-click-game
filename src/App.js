@@ -29,12 +29,12 @@ class App extends Component {
 
     // get the ID of the card that is clicked on
     const imageClick = id
-    // console.log(imageClick)
+    console.log(imageClick)
    
 
     //grab the cards array off state
     const clicked = this.state.clickers
-    // console.log(clicked)
+    console.log(clicked)
 
     // this becomes the index in the array that was clicked
     let indexOfCardClicked;
@@ -51,12 +51,12 @@ class App extends Component {
       }
     });
 
-// console.log(indexOfCardClicked);
+console.log(indexOfCardClicked);
 
 
 // see if it has been clicked
 
-// console.log(clicked[indexOfCardClicked].buttonClicked)
+console.log(clicked[indexOfCardClicked].buttonClicked)
     
 
 
@@ -69,12 +69,12 @@ class App extends Component {
 
     this.setState({score : this.state.score + 1})
     console.log(this.state.score)
+    //shuffle them
     this.state.clickers.sort(() => Math.random() - 0.5)
       
       
   // ELSE
   //if it hasent been clicked 
-    //shuffle them
     //find the object in the array you clicked on
     //update a clicked value to be true on the object in the array
     //set that new array you returned that has the object updated on it to state
