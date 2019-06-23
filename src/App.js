@@ -19,12 +19,14 @@ class App extends Component {
   };
 
 
+  gameOver = () => {
+    // build the function out so that it will reset the game
+  }
   
 
   imageClicked = id => {
 
-    // console.log("Worked from App.js")
-    
+
     // get the ID of the card that is clicked on
     const imageClick = id
     // console.log(imageClick)
@@ -67,6 +69,7 @@ class App extends Component {
 
     this.setState({score : this.state.score + 1})
     console.log(this.state.score)
+    this.state.clickers.sort(() => Math.random() - 0.5)
       
       
   // ELSE
