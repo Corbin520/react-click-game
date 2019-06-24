@@ -21,22 +21,23 @@ class App extends Component {
 
   gameOver = () => {
     // build the function out so that it will reset the game
+    console.log("Game Over was fired")
+    this.setState({score : this.state.score = 0})
+    // console.log(this.imageClicked)
   }
-  
 
+  // function for clickers
   imageClicked = id => {
-
-
+    
     // get the ID of the card that is clicked on
     const imageClick = id
-    console.log(imageClick)
+    // console.log(imageClick)
    
-
     //grab the cards array off state
     const clicked = this.state.clickers
-    console.log(clicked)
+    // console.log(clicked)
 
-    // this becomes the index in the array that was clicked
+    // this get reasigned to index on line 50
     let indexOfCardClicked;
 
     //find the card object on state 
@@ -51,20 +52,16 @@ class App extends Component {
       }
     });
 
-console.log(indexOfCardClicked);
-
+// console.log showing "true" or "false"
 
 // see if it has been clicked
-
-console.log(clicked[indexOfCardClicked].buttonClicked)
-    
-
-
-    
-    // if its === true (has been clicked) call "gameOver" & reset
-    if (clicked[indexOfCardClicked].buttonClicked === true) {
-        
-      // game over function needs to be created
+// if its === true (has been clicked) call "gameOver" & reset
+if (clicked[indexOfCardClicked].buttonClicked === true) {
+  // console.log(clicked[indexOfCardClicked].buttonClicked)
+      
+      // Call the game over function
+      this.gameOver()
+      
     } else {
 
     this.setState({score : this.state.score + 1})
@@ -72,23 +69,16 @@ console.log(clicked[indexOfCardClicked].buttonClicked)
     //shuffle them
     this.state.clickers.sort(() => Math.random() - 0.5)
       
-      
-  // ELSE
   //if it hasent been clicked 
     //find the object in the array you clicked on
     //update a clicked value to be true on the object in the array
     //set that new array you returned that has the object updated on it to state
     //react will re render
+  
     }
-
-
-
-
-    // console.log(returnedArray)
   }
 
-  
-
+  // render our page
   render() {
     return(
       
