@@ -15,7 +15,6 @@ class App extends Component {
     clickers,
     score: 0,
     highscore: 0
-    // add clicked false
   };
 
 
@@ -26,54 +25,102 @@ class App extends Component {
     // console.log(this.imageClicked)
   }
 
+  
+  
   // function for clickers
   imageClicked = id => {
     
     // get the ID of the card that is clicked on
     const imageClick = id
     // console.log(imageClick)
+
+    const status = this.state.clickers
+    // console.log(status)
    
     //grab the cards array off state
     const clicked = this.state.clickers
     // console.log(clicked)
 
-    // this get reasigned to index on line 50
+    // this gets reassigned
     let indexOfCardClicked;
+
+    
+
+
+
+
+
+
+
+
+
 
     //find the card object on state 
     clicked.find(function(element, index) {
       if (element.id === imageClick) {
+        
+        console.log("if statement fired off")
+        // write our if statement that will return true if clicked
+        console.log("ID: " + id)
+        console.log("image Clicked: " + imageClick)
+        console.log("element: " + element.id)
+
+
+        // the if statement below works when its changed to true. We just need 
+        // to now figure out how the if statment will see if both have been clicked
+        if (id === imageClick) {
+          console.log("clicked same one fired off")
+
+        status[index].buttonClicked = false;
+        }
         // return the index that was clicked
         // index will become the "returnedArray"
         indexOfCardClicked = index;
         return index;
+
+
       } else {
+
         return false;
       }
     });
 
-// console.log showing "true" or "false"
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    // console.log showing "true" or "false"
+    // console.log(clicked[indexOfCardClicked].buttonClicked)
+    const test = clicked[indexOfCardClicked].buttonClicked
+    console.log(test)
+
 
 // see if it has been clicked
 // if its === true (has been clicked) call "gameOver" & reset
 if (clicked[indexOfCardClicked].buttonClicked === true) {
-  // console.log(clicked[indexOfCardClicked].buttonClicked)
       
       // Call the game over function
-      this.gameOver()
+      console.log("if its true statement is working")
+      // this.gameOver()
       
     } else {
-
+    // Adding 1 to the score for each click
     this.setState({score : this.state.score + 1})
-    console.log(this.state.score)
-    //shuffle them
+    // console.log(this.state.score)
+
+    //shuffle the clickers
     this.state.clickers.sort(() => Math.random() - 0.5)
       
-  //if it hasent been clicked 
-    //find the object in the array you clicked on
-    //update a clicked value to be true on the object in the array
-    //set that new array you returned that has the object updated on it to state
-    //react will re render
   
     }
   }
@@ -97,4 +144,6 @@ if (clicked[indexOfCardClicked].buttonClicked === true) {
     )
   }
 }
+
+
 export default App;
