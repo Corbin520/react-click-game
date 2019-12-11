@@ -5,6 +5,8 @@ import clickers from "./clickers.json";
 import Wrapper from "./components/wrapper"
 import Header from "./components/Header"
 
+var alreadyClicked = []
+
 
 // import Footer from "./components/Footer"
 
@@ -14,8 +16,12 @@ class App extends Component {
   state = {
     clickers,
     score: 0,
-    highscore: 0
+    highscore: 0,
+    maxscore: 12
+    
   };
+
+  
 
 
   gameOver = () => {
@@ -50,8 +56,9 @@ class App extends Component {
 
 
 
+    
 
-
+    // if statement is fired off when an item is clicked on
 
 
 
@@ -59,20 +66,88 @@ class App extends Component {
     clicked.find(function(element, index) {
       if (element.id === imageClick) {
         
-        console.log("if statement fired off")
+        // console.log("if statement fired off")
+
         // write our if statement that will return true if clicked
-        console.log("ID: " + id)
-        console.log("image Clicked: " + imageClick)
-        console.log("element: " + element.id)
+
+        // console.log("ID: " + id)
+        // console.log("image Clicked: " + imageClick)
+        // console.log("element: " + element.id)
 
 
         // the if statement below works when its changed to true. We just need 
         // to now figure out how the if statment will see if both have been clicked
-        if (id === imageClick) {
-          console.log("clicked same one fired off")
 
-        status[index].buttonClicked = false;
+
+              // if statement that we are trying to see matches.
+        // if (id === imageClick) {
+        //   console.log("clicked same one fired off")
+
+        // status[index].buttonClicked = false;
+        // }
+
+
+        
+
+
+
+
+
+
+
+
+        // we need to compair if the item has been clicked already.
+          // we need to get the ids of whats been clicked:
+
+          
+
+        console.log("id: " + id)
+
+
+        
+        // This loop will loop over our array of items clicked and compair them.
+        for(var i = 0; i < alreadyClicked.length; i++) {
+
+          // this is returning the id of the items in the array (WORKING)
+          console.log("returned from array: " + alreadyClicked[i])
+
+          if (alreadyClicked[i] === alreadyClicked[i]) {
+            console.log("Working?")
+          }
         }
+        alreadyClicked.push(id)
+
+
+        
+
+
+        // if (element.id === element.id) {
+        //   console.log("Working")
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // return the index that was clicked
         // index will become the "returnedArray"
         indexOfCardClicked = index;
@@ -101,8 +176,18 @@ class App extends Component {
   
     // console.log showing "true" or "false"
     // console.log(clicked[indexOfCardClicked].buttonClicked)
-    const test = clicked[indexOfCardClicked].buttonClicked
-    console.log(test)
+
+
+    // const test = clicked[indexOfCardClicked].buttonClicked
+    // console.log(test)
+
+
+
+
+
+
+
+
 
 
 // see if it has been clicked

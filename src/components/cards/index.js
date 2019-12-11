@@ -1,4 +1,7 @@
 
+// handleClick is what we are passing into the card as an on click event.
+
+// name
 
 import React from "react"
 import "./cards.css"
